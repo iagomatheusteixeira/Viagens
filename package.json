@@ -1,0 +1,19 @@
+{
+  "name": "trajeto",
+  "version": "0.1.0",
+  "description": "Planejador de viagens independente, orientado por custo total e experiência real",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=22.9" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server/index.js",
+    "dev": "node --watch --env-file-if-exists=.env server/index.js",
+    "demo": "DEMO_MODE=1 node server/index.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "express": "4.22.3",
+    "opening_hours": "3.15.0",
+    "leaflet": "1.9.4"
+  }
+}
